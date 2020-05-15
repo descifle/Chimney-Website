@@ -12,7 +12,7 @@ html, body {
 
 .hero {
   height: 50rem;
-  background-image: url("/images/ash-blaze-bonfire-burn-391995.jpg");
+  background-image: url("https://i.postimg.cc/W3LQ060g/ash-blaze-bonfire-burn-391995.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -70,7 +70,14 @@ html, body {
 
 form .btn-dark {
   color: #dddd01;
+  margin: 1rem 0;
+  width: 8rem;
   font-weight: 600;
+}
+
+.form-control {
+  background-color: rgba(236, 235, 235, 0.438);
+  border: none;
 }
 
 textarea.form-control {
@@ -95,11 +102,12 @@ textarea.form-control {
 
 footer {
   margin-top: 3rem;
+  background-color: rgba(128, 128, 128, 0.288);
 }
 
 footer.container {
   padding: 1rem 0;
-  background-color: rgba(128, 128, 128, 0.288);
+  max-width: 100%;
 }
 
 div.col {
