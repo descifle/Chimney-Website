@@ -40,7 +40,7 @@ video#hero-video {
   -moz-transform: translateX(-50%) translateY(-50%);
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
-  background: url("images/bonfire-burning-burnt-campfire-266604.jpg") no-repeat;
+  background: url("images/bonfire.jpg") no-repeat;
   background-position: center;
   background-size: cover;
 }
@@ -162,6 +162,16 @@ div.col p {
   padding-top: 0.2rem;
   margin: 2rem;
   font-size: 1.4rem;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.show {
+  opacity: 1;
+}
+
+.hidden {
+  opacity: 0;
 }
 
 .h3-text {
@@ -192,12 +202,6 @@ hr {
 
 img {
   max-width: 100%;
-}
-
-.spaceholder {
-  width: 100%;
-  height: 200px;
-  background: black;
 }
 
 @media (min-width: 40rem) {
