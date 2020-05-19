@@ -6,6 +6,11 @@ html, body {
   background-color: #2c2f49;
 }
 
+.nav-item {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
 .brand-img {
   width: 8rem;
 }
@@ -174,13 +179,13 @@ div.col p {
   opacity: 0;
 }
 
-.h3-text {
+.h2-text {
   letter-spacing: 2px;
   color: #b1b1b1;
   padding: 1rem 0;
   font-weight: bold;
 }
-.h3-text::after {
+.h2-text::after {
   content: "";
   display: block;
   margin: 0 auto;
@@ -206,7 +211,7 @@ img {
 
 @media (min-width: 40rem) {
   .about-container {
-    padding: 0 10rem;
+    padding: 0 3rem;
   }
 
   .contact-container {
