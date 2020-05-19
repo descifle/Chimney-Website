@@ -88,6 +88,11 @@ video#hero-video {
   padding: 0 3rem;
 }
 
+.head-photo {
+  width: auto;
+  height: 16rem;
+}
+
 .about-img_container {
   padding: 0;
 }
