@@ -22,6 +22,7 @@
                     <ul class="nav navbar-nav ml-auto">
                         <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                        <li class="nav-item important-nav-item"><a class="nav-link" href="#appointment">Appointment</a></li>
                         <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                         <li class="nav-item"><a class="nav-link" href="">Careers</a></li>
                         <li class="nav-item"><a class="nav-link" href="">Testimonials</a></li>
@@ -133,6 +134,50 @@
                     </div>
                 </div>
                 <div class="card">
+        </section>
+        <div class="spacer"></div>
+        <section id="appointment">
+            <div class="row">
+                <div class="col">
+                    <h2 class="text-center h2-text">Appointment</h2>
+                    <p class="my-4">Please use this form to request an appointment</p>
+                    <form class="appointment-form">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                        <input id="name" type="text" class="form-control my-2" aria-checked="false" placeholder="Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                        <input id="phone" type="tel" class="form-control my-2" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Number" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                        <input id="email" type="email" class="form-control my-2" aria-checked="false" placeholder="Email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="date">Requested Service Date</label>
+                        <input id="date" type="date" class="form-control my-2" aria-checked="false" required min="2020-05-01">
+                        </div>
+                        <div class="form-group">
+                            <label for="service-type">Service Needed</label>
+                        <select id="service-type" class="custom-select form-control my-2" required>
+                            <option selected value="Fireplace Cleaning">Fireplace Cleaning</option>
+                            <option value="Fireplace Evaluation">Fireplace Evaluation</option>
+                            <option value="Furnace Cleaning">Furnace Cleaning</option>
+                            <option value="Furnace Evaluation">Furnace Evaluation</option>
+                            <option value="Woodstore Cleaning">Woodstore Cleaning</option>
+                            <option value="Dryer Vent Cleaning">Dryer Vent Cleaning</option>
+                            <option value="Gutter Cleaning">Gutter Cleaning</option>
+                        </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Comment/s</label>
+                        <textarea class="form-control" aria-checked="false" placeholder=""></textarea>
+                        </div>
+                        <button type="submit" class="btn-dark">Submit</button>
+                    </form>
+                </div>
+            </div>
         </section>
         <div class="spacer"></div>
         <section id="about" class="container-fluid">
