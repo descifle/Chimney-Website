@@ -12,7 +12,15 @@ html, body {
 }
 
 .important-nav-item {
-  border-bottom: solid #49462C 4px;
+  background: #55ACEE;
+  text-align: center;
+}
+
+.important-nav-item .important-nav-link {
+  color: white !important;
+}
+.important-nav-item .important-nav-link:hover {
+  color: #555 !important;
 }
 
 .brand-img {
