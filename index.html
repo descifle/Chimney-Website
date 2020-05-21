@@ -20,14 +20,14 @@
                         class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navcol-1">
                     <ul class="nav navbar-nav ml-auto">
-                        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-                        <li class="nav-item important-nav-item"><a class="nav-link" href="#appointment">Appointment</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="">Careers</a></li>
-                        <li class="nav-item"><a class="nav-link" href="">Testimonials</a></li>
-                        <li class="nav-item"><a class="nav-link" href="">FAQ</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
+                        <li class="nav-item" data-toggle="collapse" data-target="#navcol-1"><a class="nav-link active" href="index.html">Home</a></li>
+                        <li class="nav-item" data-toggle="collapse" data-target="#navcol-1"><a class="nav-link" href="#services">Services</a></li>
+                        <li class="nav-item important-nav-item" data-toggle="collapse" data-target="#navcol-1"><a class="nav-link" href="#appointment">Appointment</a></li>
+                        <li class="nav-item" data-toggle="collapse" data-target="#navcol-1"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item" data-toggle="collapse" data-target="#navcol-1"><a class="nav-link" href="">Careers</a></li>
+                        <li class="nav-item" data-toggle="collapse" data-target="#navcol-1"><a class="nav-link" href="">Testimonials</a></li>
+                        <li class="nav-item" data-toggle="collapse" data-target="#navcol-1"><a class="nav-link" href="">FAQ</a></li>
+                        <li class="nav-item" data-toggle="collapse" data-target="#navcol-1"><a class="nav-link" href="#contact">Contact Us</a></li>
                     </ul>
                 </div>
             </div>
@@ -111,7 +111,7 @@
 
                         </h2>
                     </div>
-                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
                         <div class="card-body">
                             <ul>
                                 <li>Fire Place Flue cleaning</li>
@@ -180,15 +180,15 @@
             </div>
         </section>
         <div class="spacer"></div>
-        <section id="about" class="container-fluid">
+        <section id="about" class="container">
             <div class="row">
-                <div class="col-xl-6 about-container text-center">
+                <div class="col-12 mod-container text-center">
                     <h2 class="h2-text">ABOUT</h2>
                     <p>
                         The Story of McDowell’s Complete Chimney Service, Inc.
                     </p>
                     <p>
-                        McDowell’s was established in 1978, by Wayne McDowell, Jason Rieger (Wayne's nephew)<img
+                        McDowell’s was established in 1978, by Wayne McDowell. Jason Rieger (Wayne's nephew)<img
                             class="float-right head-photo" src="images/jason_rieger.png" alt="Jasons photo">
                         Has been around the business since he was a kid. he eventually went on to work for Mcdowell's
                         where he learned the trade
@@ -196,9 +196,9 @@
                     </p>
                     <p>
                         Now, after 25 year's of working for Wayne, and for all of their customers in the community and
-                        surrounding areas,
+                        surrounding areas.
                         Jason bought the family business in November of 2019. This has been something he has worked hard
-                        for. and is happy to carry the torch. Mcdowells chimney Company hasn't changed otherwise. We are
+                        for. And is happy to carry the torch. Mcdowells chimney Company hasn't changed otherwise. We are
                         still your full service chimney Co.
                         <span>(Fireplace, Woodstove, Oil/gas Furnace & flue cleanings. Installing wood, and gas
                             inserts/servicing. full prefab fireplace replacements, dryer vent cleaning, gutter cleaning gutter guards)</span>
@@ -222,8 +222,8 @@
                         Thank you
                     </p>
                 </div>
-                <div class="col-xl-6 about-img_container align-self-center">
-                    <img class="about-img float-right" src="images/living-room.jpg" alt="living room with chimney">
+                <div class="col-12 mod-container align-self-center">
+                    <img class="about-img" src="images/living-room.jpg" alt="living room with chimney">
                 </div>
             </div>
         </section>
@@ -272,7 +272,7 @@
         <hr />
         <section id="contact" class="container-fluid">
             <h2 class="text-center h2-text">CONTACT</h2>
-            <div class="row justify-content-around contact-container">
+            <div class="row justify-content-around mod-container">
                 <div class="col-sm-4 form-container">
                     <h5>Message Us</h5>
                     <p>if you have any questions you can call us or send a message using the form below</p>
@@ -303,6 +303,9 @@
             <div class="row text-center justify-content-between">
                 <div class="col-sm-3">
                     <h3>VISIT US ON ANGIE'S LIST</h3>
+                    <div>
+                        <a href="https://www.angieslist.com/companylist/us/md/halethorpe/mcdowell%27s-complete-chimney-service-reviews-157628.htm"><img src="images/angies_list_logo.png" alt=""></a>
+                    </div>
                 </div>
                 <div class="col-sm-3">
                     <h3>HOURS & INFO</h3>
@@ -311,7 +314,7 @@
                     <p>Office Hours: Weekdays 7:00AM to 3:30PM</p>
                     <p>Email: <a href="mailto:info@mcdowellschimney.com">info@mcdowellschimney.com</a></p>
                 </div>
-                <div class="col-sm-3 justify-content-md-center py-2 align-self-center">
+                <div class="col-sm-3 justify-content-center py-2">
                     <a href="http://www.csia.org/"><img class="footer-brand" src="images/certified-sweep-color.png"
                             alt="certified chimney sweep"></a>
                 </div>
@@ -321,7 +324,7 @@
             </a>
         </div>
     </footer>
-    <div class="modal open" tabindex="-1" role="dialog">
+    <div class="modal fade" tabindex="-1" role="dialog">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
             <div class="modal-header">
@@ -340,7 +343,6 @@
           </div>
         </div>
       </div>
-    <script src="js/scripts.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
@@ -350,6 +352,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
+        <script src="js/scripts.js"></script>
 </body>
 
 </html>

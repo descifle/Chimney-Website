@@ -93,25 +93,13 @@ video#hero-video {
   margin-bottom: 2rem;
 }
 
-.about-container {
-  padding: 0 3rem;
-}
-
 .head-photo {
   width: auto;
   height: 16rem;
 }
 
-.about-img_container {
-  padding: 0;
-}
-
 .about-img {
   width: 100%;
-}
-
-.contact-container {
-  padding: 0 1rem;
 }
 
 form .btn-dark {
@@ -157,7 +145,8 @@ footer.container {
 }
 
 .footer-brand {
-  height: 5rem;
+  margin-top: 3rem;
+  height: 7.7rem;
 }
 
 div.col {
@@ -183,6 +172,10 @@ div.col p {
   font-size: 1.4rem;
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
+}
+
+.mod-container {
+  padding: 0 1rem;
 }
 
 .show {
@@ -224,10 +217,6 @@ img {
 }
 
 @media (min-width: 40rem) {
-  .about-container {
-    padding: 0 3rem;
-  }
-
   .appointment-form {
     width: 30rem;
   }
