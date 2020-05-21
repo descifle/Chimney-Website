@@ -1,9 +1,12 @@
 const jumpTop = document.querySelector('.nav-top')
 
-const shiftWindow = function() { scrollBy(0, -130) };
+// a function that fixes the offset of navigating inside of the page
+
+const shiftWindow = () => { scrollBy(0, -130) };
 if (location.hash) shiftWindow();
 window.addEventListener("hashchange", shiftWindow);
 
+// A function that shows the nav-to-top div after a certain amount of pixels
 const scrollTop = () => {
     let y = window.scrollY
     if (y >= 800) {
@@ -13,6 +16,7 @@ const scrollTop = () => {
     }
 }
 
+// If someone has already visited this page and accepts cookies the modal will not show again
 $(document).ready(() => {
     if(document.cookie.indexOf('visited=') >= 0) {
 
@@ -22,4 +26,5 @@ $(document).ready(() => {
     }
 })
 
+// Eventlistener for scrolling the DOM that fires scrollTop function
 window.addEventListener('scroll', scrollTop)

@@ -102,6 +102,11 @@ video#hero-video {
   width: 100%;
 }
 
+.testimonial-card {
+  border-radius: 4px;
+  border: 3px solid #fff;
+}
+
 form .btn-dark {
   color: #dddd01;
   margin: 1rem 0;
@@ -145,8 +150,30 @@ footer.container {
 }
 
 .footer-brand {
-  margin-top: 3rem;
   height: 7.7rem;
+}
+
+.socials a {
+  text-decoration: none;
+}
+
+.fa {
+  padding: 1rem;
+  width: 4rem;
+  border-radius: 50%;
+  font-size: 2rem;
+  color: white;
+}
+.fa:hover {
+  background-color: white;
+}
+
+.fa-facebook {
+  background-color: #3B5998;
+}
+
+.fa-twitter {
+  background-color: #55ACEE;
 }
 
 div.col {
