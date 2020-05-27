@@ -13,14 +13,17 @@ html, body {
 
 .important-nav-item {
   background: #55ACEE;
+  color: black;
+  font-size: 1.2rem;
+  font-weight: bold;
   text-align: center;
+  margin-top: 2rem;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  display: block;
 }
-
-.important-nav-item .important-nav-link {
-  color: white !important;
-}
-.important-nav-item .important-nav-link:hover {
-  color: #555 !important;
+.important-nav-item:hover {
+  color: #555;
 }
 
 .brand-img {
@@ -103,6 +106,15 @@ video#hero-video {
 .head-photo {
   width: auto;
   height: 16rem;
+  transition: transform 0.3s ease-in-out;
+}
+
+.zoom-container {
+  overflow: hidden;
+}
+
+.zoom-container > .head-photo:hover {
+  transform: scale(1.2);
 }
 
 .about-img {
@@ -112,6 +124,11 @@ video#hero-video {
 .testimonial-card {
   border-radius: 4px;
   border: 3px solid #fff;
+}
+
+.avatar img {
+  width: auto;
+  height: 20rem;
 }
 
 form .btn-dark {
