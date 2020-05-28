@@ -11,7 +11,7 @@ html, body {
   font-weight: bold;
 }
 
-.important-nav-item {
+.cta {
   display: block;
   background: #001e5e;
   color: white;
@@ -19,13 +19,14 @@ html, body {
   font-weight: bold;
   text-align: center;
   width: 15rem;
-  margin: 2rem auto;
+  margin: auto;
   border-radius: 4px;
   border: 2px solid white;
   padding: 0.9rem 1rem;
 }
-.important-nav-item:hover {
-  color: #ca7300;
+.cta:hover {
+  background: #001136;
+  color: white;
   text-decoration: none;
 }
 
@@ -47,7 +48,7 @@ html, body {
   top: 0;
   bottom: 0;
   width: 100%;
-  height: 100%;
+  height: 110%;
 }
 
 video#hero-video {
@@ -106,9 +107,14 @@ video#hero-video {
   margin-bottom: 2rem;
 }
 
-.head-photo {
+.jason-photo {
   width: auto;
   height: 16rem;
+}
+
+.head-photo {
+  width: 100%;
+  height: auto;
   transition: transform 0.3s ease-in-out;
 }
 
@@ -120,8 +126,14 @@ video#hero-video {
   transform: scale(1.2);
 }
 
-.about-img {
-  width: 100%;
+.our-team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.team-container {
+  width: 18rem;
 }
 
 .testimonial-card {
@@ -162,6 +174,186 @@ textarea.form-control {
   background: rgba(128, 128, 128, 0.288);
 }
 
+#baguetteBox-overlay {
+  display: none;
+  opacity: 0;
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000000;
+  background-color: #222;
+  background-color: rgba(0, 0, 0, 0.8);
+  transition: opacity 0.5s ease;
+}
+#baguetteBox-overlay.visible {
+  opacity: 1;
+}
+#baguetteBox-overlay .full-image {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+#baguetteBox-overlay .full-image figure {
+  display: inline;
+  margin: 0;
+  height: 100%;
+}
+#baguetteBox-overlay .full-image img {
+  display: inline-block;
+  width: auto;
+  height: auto;
+  max-height: 100%;
+  max-width: 100%;
+  vertical-align: middle;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+}
+#baguetteBox-overlay .full-image figcaption {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  line-height: 1.8;
+  white-space: normal;
+  color: #ccc;
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.6);
+  font-family: sans-serif;
+}
+#baguetteBox-overlay .full-image:before {
+  content: "";
+  display: inline-block;
+  height: 50%;
+  width: 1px;
+  margin-right: -1px;
+}
+
+#baguetteBox-slider {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  white-space: nowrap;
+  transition: left 0.4s ease, transform 0.4s ease;
+}
+#baguetteBox-slider.bounce-from-right {
+  animation: bounceFromRight 0.4s ease-out;
+}
+#baguetteBox-slider.bounce-from-left {
+  animation: bounceFromLeft 0.4s ease-out;
+}
+
+@keyframes bounceFromRight {
+  0% {
+    margin-left: 0;
+  }
+  50% {
+    margin-left: -30px;
+  }
+  100% {
+    margin-left: 0;
+  }
+}
+@keyframes bounceFromLeft {
+  0% {
+    margin-left: 0;
+  }
+  50% {
+    margin-left: 30px;
+  }
+  100% {
+    margin-left: 0;
+  }
+}
+.baguetteBox-button#previous-button, .baguetteBox-button#next-button {
+  top: 50%;
+  top: calc(50% - 30px);
+  width: 44px;
+  height: 60px;
+}
+
+.baguetteBox-button {
+  position: absolute;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  border-radius: 15%;
+  background-color: #323232;
+  background-color: rgba(50, 50, 50, 0.5);
+  color: #ddd;
+  font: 1.6em sans-serif;
+  transition: background-color 0.4s ease;
+}
+.baguetteBox-button:focus, .baguetteBox-button:hover {
+  background-color: rgba(50, 50, 50, 0.9);
+}
+.baguetteBox-button#next-button {
+  right: 2%;
+}
+.baguetteBox-button#previous-button {
+  left: 2%;
+}
+.baguetteBox-button#close-button {
+  top: 20px;
+  right: 2%;
+  right: calc(2% + 6px);
+  width: 30px;
+  height: 30px;
+}
+.baguetteBox-button svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+/*
+    Preloader
+    Borrowed from http://tobiasahlin.com/spinkit/
+*/
+.baguetteBox-spinner {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -20px;
+  margin-left: -20px;
+}
+
+.baguetteBox-double-bounce1,
+.baguetteBox-double-bounce2 {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #fff;
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: bounce 2s infinite ease-in-out;
+}
+
+.baguetteBox-double-bounce2 {
+  animation-delay: -1s;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1);
+  }
+}
 .collage {
   width: 100%;
 }
@@ -242,7 +434,7 @@ div.col p {
 
 .h2-text {
   letter-spacing: 2px;
-  color: #b1b1b1;
+  color: #3b5898;
   padding: 1rem 0;
   font-weight: bold;
 }
@@ -285,6 +477,13 @@ body.modal-open {
 
   .contact-container {
     padding: 0 5rem;
+  }
+
+  .our-team {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
   }
 }
 @media (min-width: 768px) and (max-width: 1024px) {

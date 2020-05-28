@@ -16,7 +16,7 @@ const setCookie = (cookieName,cookieValue) => {
 }
 
 // A function that shows the nav-to-top div after a certain amount of pixels
-const scrollTop = () => {
+const scrollTopAppear = () => {
     let y = window.scrollY
     if (y >= 800) {
         jumpTop.className = "nav-top show"
@@ -25,8 +25,8 @@ const scrollTop = () => {
     }
 }
 
-// If someone has already visited this page and accepts cookie the modal will not show again
 $(document).ready(() => {
+    // If someone has already visited this page and accepts cookie the modal will not show again
     if(document.cookie.indexOf('visited=') >= 0) {
 
     }  else {
@@ -41,7 +41,16 @@ $(document).ready(() => {
     $('.navbar-collapse a').click(() => {
         $('.navbar-collapse').collapse('hide')
     })
-    
-    // Eventlistener for scrolling the DOM that fires scrollTop function
-    window.addEventListener('scroll', scrollTop)
+
+    //animation to top
+    $('.nav-top').click(() => {
+        $('html ,body').animate({scrollTop : 0}, 800)
+    })
+
+    // Eventlistener for scrolling the DOM that fires scrollUp function
+    window.addEventListener('scroll', scrollTopAppear)
+})
+
+$(window).on('load', () => {
+    baguetteBox.run('.gallery');
 })
