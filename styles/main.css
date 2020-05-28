@@ -12,18 +12,21 @@ html, body {
 }
 
 .important-nav-item {
-  background: #55ACEE;
-  color: black;
-  font-size: 1.2rem;
+  display: block;
+  background: #001e5e;
+  color: white;
+  font-size: 1.5rem;
   font-weight: bold;
   text-align: center;
-  margin-top: 2rem;
+  width: 15rem;
+  margin: 2rem auto;
   border-radius: 4px;
-  padding: 0.5rem 1rem;
-  display: block;
+  border: 2px solid white;
+  padding: 0.9rem 1rem;
 }
 .important-nav-item:hover {
-  color: #555;
+  color: #ca7300;
+  text-decoration: none;
 }
 
 .brand-img {
