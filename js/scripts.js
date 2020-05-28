@@ -8,7 +8,12 @@ const shiftWindow = () => { scrollBy(0, -130) };
 if (location.hash) shiftWindow();
 window.addEventListener("hashchange", shiftWindow);
 
-// const setCookie()
+const setCookie = (cookieName,cookieValue) => {
+    const today = new Date()
+    const expire = new Date()
+    expire.setTime(today.getTime() + 3600000*24*14);
+    document.cookie = cookieName+"="+encodeURI(cookieValue) + ";expires="+expire.toGMTString()
+}
 
 // A function that shows the nav-to-top div after a certain amount of pixels
 const scrollTop = () => {
@@ -27,16 +32,16 @@ $(document).ready(() => {
     }  else {
         $(".modal").modal('toggle')
     }
-})
 
-$('#stop-modal').change(() => {
-    document.cookie = 'visited=true'
+    $('#stop-modal').change(() => {
+        document.cookie = setCookie('visited','true')
+    })
+    
+    //fixes hard html collapse problem
+    $('.navbar-collapse a').click(() => {
+        $('.navbar-collapse').collapse('hide')
+    })
+    
+    // Eventlistener for scrolling the DOM that fires scrollTop function
+    window.addEventListener('scroll', scrollTop)
 })
-
-//fixes hard html collapse problem
-$('.navbar-collapse a').click(() => {
-    $('.navbar-collapse').collapse('hide')
-})
-
-// Eventlistener for scrolling the DOM that fires scrollTop function
-window.addEventListener('scroll', scrollTop)

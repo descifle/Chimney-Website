@@ -32,8 +32,6 @@
                         <li class="nav-item" data-toggle="collapse"><a class="nav-link" href="#faq">FAQ</a></li>
                         <li class="nav-item" data-toggle="collapse"><a class="nav-link" href="#contact">Contact Us</a>
                         </li>
-                        <li class="nav-item important-nav-item" data-toggle="collapse"><a
-                                class="nav-link important-nav-link" href="#appointment">Appointment</a></li>
                     </ul>
                 </div>
             </div>
@@ -52,6 +50,7 @@
                     <h1>
                         Established, Professional Chimney Sweeping Services
                     </h1>
+                    <a class=" important-nav-item" href="#appointment">Appointment</a>
                 </div>
             </div>
         </section>
@@ -77,7 +76,7 @@
                 </div>
                 <div class="col-md-4 card">
                     <div class="services-card_img">
-                        <img class="card-img-top" src="images/two-man-holding-white-paper-1216589.jpg"
+                        <img class="card-img-top" src="images/safety.jpg"
                             alt="Two men in PPE">
                     </div>
                     <div class="card-body">
@@ -142,20 +141,20 @@
                 <div class="card">
         </section>
         <div class="spacer"></div>
-        <section id="appointment">
+        <section id="appointment" class="container">
             <div class="row">
                 <div class="col">
                     <h2 class="text-center h2-text">Appointment</h2>
                     <p class="my-4 text-center">Please use this form to request an appointment</p>
-                    <form class="appointment-form">
+                    <form class="appointment-form" action="appointment.php" method="POST">
                         <div class="form-group">
                             <label for="name">Full Name</label>
-                            <input id="name" type="text" class="form-control my-2" aria-checked="false"
+                            <input name="user" id="name" type="text" class="form-control my-2" aria-checked="false"
                                 placeholder="Name" required>
                         </div>
                         <div class="form-group">
                             <label for="phone">Phone Number</label>
-                            <input id="phone" type="tel" class="form-control my-2" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                            <input id="phone" type="tel" class="form-control my-2" pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
                                 placeholder="Number" required>
                         </div>
                         <div class="form-group">
@@ -184,7 +183,7 @@
                             <label>Comment/s</label>
                             <textarea class="form-control" aria-checked="false" placeholder=""></textarea>
                         </div>
-                        <button type="submit" class="btn-dark">Submit</button>
+                        <button type="submit" name="service" class="btn-dark">Submit</button>
                     </form>
                 </div>
             </div>
@@ -227,8 +226,39 @@
                         homes.
                     </p>
                 </div>
-                <div class="col-12 mod-container align-self-center">
-                    <img class="about-img" src="images/living-room.jpg" alt="living room with chimney">
+                <div class="col-12 mod-container align-self-center pt-5">
+                    <!-- <img class="about-img" src="images/living-room.jpg" alt="living room with chimney"> -->
+                    <h3 class="text-center team-h3">Our Team</h3>
+                    <p class="text-center">Meet our team. We are problem solvers. Exceptional workers. Experienced Chimney servicers</p>
+                    <div class="d-flex justify-content-between">
+                        <div class="team-container">
+                            <div class="zoom-container">
+                                <img class="head-photo" src="images/jason-head.png" alt="">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Jason Rieger</h5>
+                                <p class="card-text">Current Owner</p>
+                            </div>
+                        </div>
+                        <div class="team-container">
+                            <div class="zoom-container">
+                                <img class="head-photo" src="images/mason-head.png" alt="">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Mason</h5>
+                                <p class="card-text">Experienced Employee</p>
+                            </div>
+                        </div>
+                        <div class="team-container">
+                            <div class="zoom-container">
+                                <img class="head-photo" src="images/Female-silhouette.png" alt="">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Laura</h5>
+                                <p class="card-text">Receptionist</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -239,7 +269,7 @@
                 <div class="col-12">
                     <div class="card shadow testimonial-card mt-2 mb-3">
                         <div class="avatar mx-auto white">
-                            <img src="images/4head.jpg" class="mt-3 srounded-circle img-responsive" alt="man avatar">
+                            <img src="images/4head.jpg" class="mt-3 rounded-circle img-fluid" alt="man avatar">
                         </div>
                         <div class="card-body">
                             <h4 class="card-title font-weight-bold">Chris. B</h4>
@@ -255,7 +285,7 @@
                     </div>
                     <div class="card shadow testimonial-card mt-5 mb-3">
                         <div class="avatar mx-auto white">
-                            <img src="images/4head.jpg" class="mt-3 srounded-circle img-responsive" alt="man avatar">
+                            <img src="images/Female-silhouette.png" class="mt-3 rounded-circle img-fluid" alt="man avatar">
                         </div>
                         <div class="card-body">
                             <h4 class="card-title font-weight-bold">Ida & Bill Kern </h4>
@@ -269,7 +299,7 @@
                     </div>
                     <div class="card shadow testimonial-card mt-5 mb-3">
                         <div class="avatar mx-auto white">
-                            <img src="images/4head.jpg" class="mt-3 srounded-circle img-responsive" alt="man avatar">
+                            <img src="images/4head.jpg" class="mt-3 rounded-circle img-fluid" alt="man avatar">
                         </div>
                         <div class="card-body">
                             <h4 class="card-title font-weight-bold">Willy</h4>
@@ -291,16 +321,7 @@
                     <img src="images/scaffold-1.jpg" alt="scaffold" class="collage">
                 </div>
                 <div class="col-sm-4">
-                    <img src="images/mason-head.png" alt="face" class="collage">
-                </div>
-                <div class="col-sm-4">
-                    <img src="images/santa.jpg" alt="santa written in snow" class="collage">
-                </div>
-                <div class="col-sm-4">
                     <img src="images/sunset.jpg" alt="sunset through woods" class="collage">
-                </div>
-                <div class="col-sm-4">
-                    <img src="images/jason-head.png" alt="face" class="collage">
                 </div>
                 <div class="col-sm-4">
                     <img src="images/scaffold-2.jpg" alt="scaffold" class="collage">
@@ -349,9 +370,11 @@
             </div>
         </section>
         <hr />
-        <section id="faq" class="container">
+        <section id="faq" class="container pb-5">
             <div class="row">
-                <h4>FAQ</h4>
+                <div class="col-12">
+                    <h4 class="font-weight-bold my-4">Frequently Asked Questions</h4>
+                </div>
             </div>
             <div id="accordionfaq">
                 <div class="card">
@@ -566,29 +589,29 @@
                 </div>
             </div>
         </section>
-        <hr />
+        <div class="spacer mt-5"></div>
         <section id="employment" class="container">
-            <h2>Employment</h2>
+            <h2 class="h2-text text-center">Employment</h2>
             <div class="row">
                 <div class="col-12">
-                    <h4>Hiring</h4>
-                    <p>We are always looking for dependable individuals who are interested in working in our industry.
+                    <h4 class="font-weight-bold">Hiring</h4>
+                    <p class="font-weight-bold mb-5">We are always looking for dependable individuals who are interested in working in our industry.
                         Here are seasonal positions that are available.</p>
-                    <h4>Experienced chimney Sweep</h4>
+                    <h4 class="font-weight-normal">Experienced chimney Sweep</h4>
                     <p>Requirements: Candidates must be reliable with at least one year of chimney sweeping experience,
                         and must be comfortable working on roofs and ladders. C.S.I.A. certification or masonry
                         experience is a plus. The ability to pass a General Health Physical (which includes a drug
                         test), Current MD Driver’s License and clean driving record required.
                         Uniform program and benefits are available. Salary is commensurate with experience. Please call
                         Wayne or Eleanore for more details at (410) 242-2252.</p>
-                    <h4>Experienced Mason</h4>
+                    <h4 class="font-weight-normal">Experienced Mason</h4>
                     <p>Requirements: Candidates must be reliable, and must be comfortable working on roofs, scaffolding,
                         and ladders. Must be familiar in chimney rebuilding and repair. The ability to pass a General
                         Health Physical (which includes a drug test), Current MD Driver’s License and clean driving
                         record required.
                         Uniform program and benefits are available. Salary is commensurate with experience. Please call
                         Wayne or Eleanore for more details at (410) 242-2252.</p>
-                    <h4>Part Time Chimney Sweep Assistant</h4>
+                    <h4 class="font-weight-normal">Part Time Chimney Sweep Assistant</h4>
                     <p>
                         Requirements: Candidates must be reliable, and must be comfortable working on roofs,
                         scaffolding, and ladders, own some basic hand tools. The ability to pass a General Health
@@ -631,8 +654,7 @@
                 </div>
             </div>
             <div class="row">
-                <p class="text-center text-small mx-auto"><small>&copy; Mcdowells Chimney &#183; Developed by Giovanni
-                        Headley</small></p>
+                <p class="text-center text-small mx-auto"><small>&copy; Mcdowells Chimney &#183; <a href="https://swiftstaffing.com/">Developed by Swift Staffing</a></small></p>
             </div>
             <a id="toTop float-right" href="#navigation">
                 <div id="toTopHover" class="nav-top"> &#8593</div>
