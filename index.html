@@ -50,7 +50,8 @@
                     <h1>
                         Established, Professional Chimney Sweeping Services
                     </h1>
-                    <a class="cta" href="#appointment">Appointment</a>
+                    <p class="cta-text mx-auto my-2">Book an appointment</p>
+                    <a class="cta" href="#appointment">Start Now</a>
                 </div>
             </div>
         </section>
@@ -146,7 +147,7 @@
                 <div class="col">
                     <h2 class="text-center h2-text">Appointment</h2>
                     <p class="my-4 text-center">Please use this form to request an appointment</p>
-                    <form class="appointment-form" action="appointment.php" method="POST">
+                    <form class="appointment-form" data-bss-recipient="d4fdc294cbb95f23fb4f37e8fbeee503" data-bss-subject="Validation Form">
                         <div class="form-group">
                             <label for="name">Full Name</label>
                             <input name="user" id="name" type="text" class="form-control my-2" aria-checked="false"
@@ -181,7 +182,7 @@
                         </div>
                         <div class="form-group">
                             <label>Comment/s</label>
-                            <textarea class="form-control" aria-checked="false" placeholder=""></textarea>
+                            <textarea role="textbox" contenteditable="true" aria-multiline="true" class="form-control" placeholder="Additional Comments..."></textarea>
                         </div>
                         <button type="submit" name="service" class="btn-dark">Submit</button>
                     </form>
@@ -231,7 +232,7 @@
                     <h3 class="text-center team-h3">Our Team</h3>
                     <p class="text-center">Meet our team. We are problem solvers. Exceptional workers. Experienced Chimney servicers</p>
                     <div class="our-team">
-                        <div class="card team-container">
+                        <div class="card shadow-sm team-container">
                             <div class="zoom-container">
                                 <img class="head-photo" src="images/jason-head.png" alt="">
                             </div>
@@ -240,22 +241,22 @@
                                 <p class="card-text">Current Owner</p>
                             </div>
                         </div>
-                        <div class="card team-container">
+                        <div class="card shadow-sm team-container">
                             <div class="zoom-container">
                                 <img class="head-photo" src="images/mason-head.png" alt="">
                             </div>
                             <div class="card-body">
-                                <h5 class="card-title">Mason</h5>
+                                <h5 class="card-title">Rich Cole, Mason</h5>
                                 <p class="card-text">Experienced Employee</p>
                             </div>
                         </div>
-                        <div class="card team-container">
+                        <div class="card shadow-sm team-container">
                             <div class="zoom-container">
                                 <img class="head-photo" src="images/Female-head.png" alt="">
                             </div>
                             <div class="card-body">
-                                <h5 class="card-title">Laura</h5>
-                                <p class="card-text">Receptionist</p>
+                                <h5 class="card-title">Laura Stewart</h5>
+                                <p class="card-text">Office Manager</p>
                             </div>
                         </div>
                     </div>
@@ -315,7 +316,7 @@
             <p class="text-center py-4"><strong>PHOTO GALLERY</strong></p>
             <div class="gallery row no-gutters">
                 <a href="images/rich-truck.jpeg" class="col-sm-4">
-                    <img src="images/rich-truck.jpeg" alt="employee standing next to truck" class="collage">
+                    <img src="images/rich-truck.jpeg" alt="employee standing next to truck" class="zoom-container collage">
                 </a>
                 <a href="images/scaffold-1.jpg" class="col-sm-4">
                     <img src="images/scaffold-1.jpg" alt="scaffold" class="collage">
@@ -350,7 +351,7 @@
                 <div class="col-sm-4 form-container">
                     <h5>Message Us</h5>
                     <p>if you have any questions you can call us or send a message using the form below</p>
-                    <form>
+                    <form id="contact-form" data-bss-recipient="d4fdc294cbb95f23fb4f37e8fbeee503" data-bss-subject="Validation Form">
                         <input type="text" class="form-control my-2" aria-checked="false" placeholder="Name">
                         <input type="email" class="form-control my-2" aria-checked="false" placeholder="Email">
                         <input type="text" class="form-control my-2" aria-checked="false" placeholder="Subject">
@@ -603,14 +604,13 @@
                         experience is a plus. The ability to pass a General Health Physical (which includes a drug
                         test), Current MD Driver’s License and clean driving record required.
                         Uniform program and benefits are available. Salary is commensurate with experience. Please call
-                        Wayne or Eleanore for more details at (410) 242-2252.</p>
+                        us at 410-242-2252 for more details about job opportunities.</p>
                     <h4 class="font-weight-normal">Experienced Mason</h4>
                     <p>Requirements: Candidates must be reliable, and must be comfortable working on roofs, scaffolding,
                         and ladders. Must be familiar in chimney rebuilding and repair. The ability to pass a General
                         Health Physical (which includes a drug test), Current MD Driver’s License and clean driving
                         record required.
-                        Uniform program and benefits are available. Salary is commensurate with experience. Please call
-                        Wayne or Eleanore for more details at (410) 242-2252.</p>
+                        Uniform program and benefits are available. Salary is commensurate with experience. Please call us at 410-242-2252 for more details about job opportunities. </p>
                     <h4 class="font-weight-normal">Part Time Chimney Sweep Assistant</h4>
                     <p>
                         Requirements: Candidates must be reliable, and must be comfortable working on roofs,
@@ -619,7 +619,7 @@
                         required. Masonry skills are a plus, but not required.
                         Uniform program and benefits are available. Salary is commensurate with experience. This
                         part-time position could lead to full-time employment by the Fall.
-                        Please call Wayne or Eleanore for more details at (410) 242-2252.
+                        Please call us at 410-242-2252 for more details about job opportunities.
                     </p>
                 </div>
             </div>
@@ -693,6 +693,7 @@
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
     <script src="js/baguettebox.js"></script>
+    <script src="js/smart-forms.min.js"></script>
     <script src="js/scripts.js"></script>
 </body>
 
