@@ -4,9 +4,9 @@ const jumpTop = document.querySelector('.nav-top')
 
 // a function that fixes the offset of navigating inside of the page
 
-const shiftWindow = () => { scrollBy(0, -130) };
-if (location.hash) shiftWindow();
-window.addEventListener("hashchange", shiftWindow);
+const shiftWindow = () => { scrollBy(0, -130) }
+if (location.hash) shiftWindow()
+window.addEventListener("hashchange", shiftWindow)
 
 const setCookie = (cookieName,cookieValue) => {
     const today = new Date()
@@ -23,6 +23,18 @@ const scrollTopAppear = () => {
     } else {
         jumpTop.className = "nav-top hide"
     }
+}
+
+// sets the current date to first date available
+const setDate = () => {
+    const d = new Date()
+    const date = d.toISOString().slice(0,10)
+    // const day = d.getDate()
+    // const month = d.getMonth() + 1
+    // const year = d.getFullYear()
+    // const fullDate = `${year}-${'0' + month}-${day}`
+    return date
+
 }
 
 $(document).ready(() => {
@@ -47,10 +59,13 @@ $(document).ready(() => {
         $('html ,body').animate({scrollTop : 0}, 800)
     })
 
+    $('#date').attr('min',setDate())
+    $('#date').val(setDate())
+
     // Eventlistener for scrolling the DOM that fires scrollUp function
     window.addEventListener('scroll', scrollTopAppear)
 })
 
 $(window).on('load', () => {
-    baguetteBox.run('.gallery');
+    baguetteBox.run('.gallery')
 })
