@@ -107,8 +107,9 @@ video#hero-video {
 .card-body {
   background-color: #ececec;
 }
-.card-body h4 {
+.card-body h3 {
   font-weight: bold;
+  color: #1e53c4;
 }
 
 .appointment-form {
@@ -145,6 +146,11 @@ video#hero-video {
 
 .team-container {
   width: 18rem;
+}
+
+.team-h3 {
+  color: #55ACEE;
+  font-weight: bold;
 }
 
 .testimonial-card {
@@ -505,6 +511,10 @@ body.modal-open {
     justify-content: space-between;
     flex-direction: row;
     align-items: center;
+  }
+
+  .appointment-wrapper {
+    border: solid 1px #dbdbdb;
   }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
