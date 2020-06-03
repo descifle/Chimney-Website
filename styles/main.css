@@ -388,6 +388,10 @@ textarea.form-control {
   transform: scale(1.2);
 }
 
+.fixed-img {
+  position: absolute;
+}
+
 footer {
   margin-top: 3rem;
   background-color: rgba(128, 128, 128, 0.288);
